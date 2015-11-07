@@ -1,3 +1,3 @@
-angular.module("mailApp").controller("emailerController",function ($scope) {
-  // body...
+angular.module("mailApp").controller("emailerController",function ($scope, $http) {
+
 });
