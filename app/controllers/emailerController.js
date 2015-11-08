@@ -30,8 +30,21 @@ angular.module("mailApp").controller("emailerController",function ($scope, $http
       data: emailData
     };
     console.log(request);
-    $http(request).success(function successCallback(response){
-      console.log(response);
-    });
+    $http(request)
+      .success(function successCallback(response){
+        console.log(response);
+        // call function that launches modal
+        // launchModal('Email sent blah');
+      });
   };
+
+  var launchModal = function(message) {
+      // set $scope.modalMessage = messsage;
+      // in the html use ng-model="modalMessage"
+      // launch modal from js
+  }
 });
+
+// Next: navbar para barra d navegacion
+// Buscar tema de bootstramp (css)
+// Inclues css despues del bootstrap css

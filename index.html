@@ -8,13 +8,20 @@
 </head>
 <body>
   <div class="container">
-    <ul>
-      <li><a href="/#/home">Home</a></li>
-      <li><a href="/#/emailer">Emailer</a></li>
-    </ul>
-    <div class="row">
-      <ui-view></ui-view>
-    </div>
+  <div class="row">
+    <!-- this is the nav bar -->
+    <nav class="navbar navbar-inverse">
+      <a class="navbar-brand" href="/#/home">
+          <img alt="" src="...">
+      </a>
+      <ul class="nav navbar-nav">
+        <li><a href="/#/home">Home</a></li>
+        <li><a href="/#/emailer">Emailer</a></li>
+      </ul>
+    </nav>
+    <ui-view></ui-view>
+  </div>
+
   </div>
 
   <!-- this is angular -->
