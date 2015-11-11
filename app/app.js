@@ -11,6 +11,10 @@ angular.module("mailApp",["ui.router"])
       templateUrl: "views/emailerTemplate.html",
       controller: "emailerController"
     })
+    .state("faq",{
+      url: "/faq",
+      templateUrl: "views/faq.html",
+    })
 
   $urlRouterProvider
     .otherwise("/home");

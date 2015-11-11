@@ -12,7 +12,7 @@ angular.module("mailApp").controller("emailerController",function ($scope, $http
       // TODO: Place key in file not tracked by git
       key: "WxHumDCrhCP78sBDaNb9xg",
       message: {
-        from_email: "mailapp@zonicblack.com",
+        from_email: "mailapp@primate.com",
         to: [
           {
             email: $scope.email.emailAddress,
@@ -33,6 +33,7 @@ angular.module("mailApp").controller("emailerController",function ($scope, $http
     $http(request)
       .success(function successCallback(response){
         console.log(response);
+        $scope.email="";
         // call function that launches modal
         // launchModal('Email sent blah');
       });
